@@ -1,7 +1,7 @@
 {
   "name": "btc-alert-server",
   "version": "1.0.0",
-  "description": "Bitcoin $10 move alert server with push notifications",
+  "description": "Bitcoin $20 move alert server with push notifications",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
