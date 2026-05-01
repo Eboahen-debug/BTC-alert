@@ -9,7 +9,7 @@ services:
       - key: NTFY_TOPIC
         value: btc-price-alert-9x7k2m   # ← CHANGE THIS to your own unique topic name
       - key: ALERT_DELTA
-        value: 10                        # Alert every $500 move
+        value: 20                        # Alert every $20 move
       - key: POLL_SECONDS
         value: 60                         # Check price every 60 seconds
       - key: RENDER_EXTERNAL_URL
