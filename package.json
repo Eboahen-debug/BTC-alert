@@ -1,0 +1,17 @@
+{
+  "name": "btc-alert-server",
+  "version": "1.0.0",
+  "description": "Bitcoin $500 move alert server with push notifications",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-fetch": "^2.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

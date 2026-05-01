@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: btc-alert-server
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NTFY_TOPIC
+        value: btc-price-alert-9x7k2m   # ← CHANGE THIS to your own unique topic name
+      - key: ALERT_DELTA
+        value: 500                        # Alert every $500 move
+      - key: POLL_SECONDS
+        value: 60                         # Check price every 60 seconds
+      - key: RENDER_EXTERNAL_URL
+        fromService:
+          type: web
+          name: btc-alert-server
+          property: host
+    healthCheckPath: /health
