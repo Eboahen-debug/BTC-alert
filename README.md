@@ -1,6 +1,6 @@
 # ₿ BTC Alert Server
 
-Monitors Bitcoin price every 60 seconds and sends a **push notification to your phone** every time BTC moves **$500** in either direction. Also alerts on key level breaches ($79K, $82K, $75.6K, etc).
+Monitors Bitcoin price every 60 seconds and sends a **push notification to your phone** every time BTC moves **$20** in either direction. Also alerts on key level breaches ($79K, $82K, $75.6K, etc).
 
 ---
 
@@ -48,7 +48,7 @@ Open ntfy app → **+** → type your topic name → Subscribe
 | Variable | Default | Description |
 |----------|---------|-------------|
 | `NTFY_TOPIC` | `btc-price-alert-9x7k2m` | Your ntfy channel name (make it unique!) |
-| `ALERT_DELTA` | `500` | USD move that triggers a notification |
+| `ALERT_DELTA` | `20` | USD move that triggers a notification |
 | `POLL_SECONDS` | `60` | How often to check the price |
 
 ---
@@ -70,8 +70,8 @@ The page auto-refreshes every 30 seconds.
 
 | Alert | Trigger | Priority |
 |-------|---------|----------|
-| 🟢 BTC UP $500 | Price rises $500 from last alert | Normal |
-| 🔴 BTC DOWN $500 | Price drops $500 from last alert | Normal |
+| 🟢 BTC UP $20 | Price rises $20 from last alert | Normal |
+| 🔴 BTC DOWN $20 | Price drops $20 from last alert | Normal |
 | 🟢/🔴 BTC UP/DOWN $1000+ | $1000+ single move | **High** |
 | 🚨 Resistance Broken | Price crosses $79K, $82K, $84.5K | **High** |
 | 🔴 Support Broken | Price crosses below $75.6K, $74.3K, $70K | **High** |
