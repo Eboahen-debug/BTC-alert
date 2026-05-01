@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 // Your ntfy topic — change this to something unique e.g. "btc-alert-james-2026"
 // Anyone who knows this topic name can subscribe, so make it hard to guess
 const NTFY_TOPIC   = process.env.NTFY_TOPIC   || "btc-price-alert-9x7k2m";
-const ALERT_DELTA  = parseInt(process.env.ALERT_DELTA  || "500");   // $500 move triggers alert
+const ALERT_DELTA  = parseInt(process.env.ALERT_DELTA  || "20");   // $20 move triggers alert
 const POLL_SECONDS = parseInt(process.env.POLL_SECONDS || "60");     // check every 60s
 
 // Key levels for contextual alerts
